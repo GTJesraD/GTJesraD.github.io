@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+html, body {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    background-color: #EDE1B9;
+}
+
+header {
+    z-index: 2;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 1%;
+    justify-content: space-between;
+}
+
+header a, footer p {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    display: block;
+}
+
+header a:hover, header a:focus {
+    transform: scale(1.1, 1.1);
+    transition: 0.5s;
+}
+
+.main-page {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: black;
+    font-size: 2rem;
+}
+
+.main-page>h1 {
+    padding-top: 5%;
+}
+
+.main-page>h2 {
+    font-size: 1.3rem;
+    padding-top: 1%;
+}
+
+.box-link {
+    visibility: hidden;
+}
+
+.body-index {
+    background: url("67cc19fa95b6106e2c2d0fe60206f0ca.jpg") 50%/cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer, header, footer p {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* page A PROPOS */
+
+.section-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    background-color: #EDE1B9;
+    width: 100%;
+}
+
+.section-contenu {
+    grid-column: 2/3;
+    padding: 10%;
+    font-family: "Montserrat", sans-serif;
+    z-index: 1;
+}
+
+.section-contenu h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.section-contenu h1 {
+    font-size: 2rem;
+    padding-bottom: 10%;
+}
+
+.section-contenu p {
+    font-size: 1.3rem;
+    padding-bottom: 5%;
+    text-align: justify;
+}
+
+.courbe_apropos_1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(-90deg) translateX(295px);
+    transform-origin: right bottom;
+    z-index: 0;
+    width: 190vh;
+}
+
+.courbe_apropos_2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(90deg) translateX(-295px);
+    transform-origin: left bottom;
+    z-index: 0;
+    width: 190vh;
+}
+
+/* page EXPPRO */
+
+.container_exp {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    flex-direction: column;
+    background-color: #EDE1B9;
+}
+
+.container_exp h1, .container_exp h2, .container_exp h3, .container_exp h4 {
+    text-align: center;
+    padding: 0.5%;
+}
+
+.exp1 {
+    border: black solid 1px;
+    margin: 3%;
+    width: 28%;
+    padding: 2%;
+    text-align: justify;
+    z-index: 1;
+}
+
+.exp2 {
+    border: black solid 1px;
+    margin: 3%;
+    width: 28%;
+    padding: 2%;
+    text-align: justify;
+    z-index: 1;
+}
+
+.courbe_exp {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(-90deg) translateX(295px);
+    transform-origin: right bottom;
+    z-index: 0;
+    width: 190vh;
+}
+
+/* page CONTACT */
+
+.nav_2_icon {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container_ul {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+.mail {
+    display: flex;
+    padding: 2.5%;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.container_ul label {
+    margin-bottom: 1.5rem;
+}
+
+.container_ul a:hover, .container_ul a:focus {
+    transform: scale(1.1, 1.1);
+    transition: 0.5s;
+}
+
+.git {
+    display: flex;
+    padding: 2.5%;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.courbe_contact_1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(-90deg) translateX(295px);
+    transform-origin: right bottom;
+    z-index: 0;
+    width: 190vh;
+}
+
+.courbe_contact_2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(90deg) translateX(-295px);
+    transform-origin: left bottom;
+    z-index: 0;
+    width: 190vh;
+}
+
+@media (max-width: 1366px) {
+    /* PAGE INDEX */
+    .main-page {
+        font-size: 2.5rem;
+        padding-top: 4%;
+    }
+    .main-page>h2 {
+        font-size: 2rem;
+    }
+    header {
+        min-height: 80px;
+    }
+    header a, footer p {
+        font-size: 2rem;
+    }
+    header ul {
+        padding: 1% 2% 1% 2%;
+    }
+}
+
+@media (max-width: 1024px) {
+    /*PAGE INDEX*/
+    .main-page {}
+}
+
+@media (max-width: 768px) {
+    /*PAGE INDEX*/
+    .main-page {
+        font-size: 3rem;
+        padding-top: 8%;
+    }
+    header ul {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 360px) {
+    /* PAGE INDEX */
+
+    .body-index {
+        background: url("67cc19fa95b6106e2c2d0fe60206f0ca.jpg") 80%/cover;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .main-page {
+        padding: 0;
+        font-size: 2rem;
+    }
+    .main-page h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .box-link {
+        background-color: purple;
+    }
+    .box2, .box2, .box3 {
+        background-color: red;
+    }
+    footer {
+        font-size: 1rem;
+    }
+
+}
