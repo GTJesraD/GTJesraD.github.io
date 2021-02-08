@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100%;
+}
+
+header {
+    background-color: black;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 1%;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.main-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100%;
+    color: cornsilk;
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+    font-size: 2rem;
+}
+.main-page > h2 {
+    font-size: 1.3rem;
+}
+
+.body-index {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background: url("alena-aenami-aenami-lunar.jpg") 50%/cover;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+
+}
+
+footer {
+    color: white;
+    background-color: black;
+
+}
+footer a {
+    color: white;
+}
